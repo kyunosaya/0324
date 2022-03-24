@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문( v-for )</title>
+    <script defer src="https://unpkg.com/vue@next"></script> <!-- cdn 연결 -->
+    <script defer src="./js/sec06.js"></script>
+</head>
+<body>
+
+<div id="app">
+  <ul>
+    <li v-for="(item,index) in name">{{index}} - {{item}}</li>
+  </ul>
+
+  <!--  -->
+
+  <ul>
+    <li v-for="item of name">{{item}}</li>
+  </ul>
+</div>
+
+</body>
+</html>

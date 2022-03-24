@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문( v-for )</title>
+    <script defer src="https://unpkg.com/vue@next"></script> <!-- cdn 연결 -->
+    <script defer src="./js/sec07.js"></script>
+</head>
+<body>
+  <div id="app">
+    <figure v-for="(item,index) in product" :key="index">
+      <img :src="item.imgSrc" :alt="item.name">
+      <figcaption>{{item.description}}</figcaption>
+    </figure>
+  </div>
+</body>
+</html>
