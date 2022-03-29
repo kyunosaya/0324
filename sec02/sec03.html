@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+    <script defer src="https://unpkg.com/vue@next"></script>
+    <script defer src="./js/sec03.js"></script>
+
+</head>
+<body>
+    <div id="app">
+      <a @click.stop = "myAction('hello')" href="./images/pic01.png">{{name}}</a>
+    </div>
+</body>
+</html>

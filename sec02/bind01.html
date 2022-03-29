@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-model</title>
+    <script defer src="https://unpkg.com/vue@next"></script>
+    <script defer src="./js/bind01.js"></script>
+
+</head>
+<body>
+    <div id="app">
+      <label for="price">price</label>
+      <input type="number" id="price" v-model="max">
+      <span>최고가 : {{max}}</span>
+    </div>
+
+    <div id="text">
+      <label for="memo">memo</label>
+      <textarea id="memo" v-model="str"></textarea>
+      <span>memo : {{str}}</span>
+    </div>
+</body>
+</html>
